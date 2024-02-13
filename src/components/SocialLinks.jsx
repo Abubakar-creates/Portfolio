@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com/in/rahulkarda2002",
+      href: "https://www.linkedin.com/in/abubakar-abubakar-3806bb2a4/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/rahulkarda",
+      href: "https://github.com/Develaper-Abubakar",
     },
     {
       id: 3,
@@ -31,7 +31,8 @@ const SocialLinks = () => {
           Email <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:rahulkarda2002@gmail.com",
+      href: "mailto:abubakar.4983763@gmail.com",
+      
     },
     {
       id: 4,
@@ -42,17 +43,18 @@ const SocialLinks = () => {
       ),
       href: resume,
       download: true,
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          Twitter <FaTwitter size={30} />
-        </>
-      ),
-      href: "https://twitter.com/rahulkarda2002",
       style: "rounded-br-md",
     },
+    // {
+    //   id: 5,
+    //   child: (
+    //     <>
+    //       Twitter <FaTwitter size={30} />
+    //     </>
+    //   ),
+    //   href: "https://twitter.com/rahulkarda2002",
+    //   style: "rounded-br-md",
+    // },
   ];
 
   return (
@@ -62,7 +64,7 @@ const SocialLinks = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" +
               " " +
               style
             }
