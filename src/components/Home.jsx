@@ -24,7 +24,7 @@ const Home = () => {
           <p className="text-gray-500 py-4 max-w-md">
             I have 1.5 years of experience building websites and desgining software.
             I love to work on web application using technologies like
-            React, React Native , Tailwind and Next JS.
+            React, React Native, Tailwind and Next JS.
           </p>
 
           <div className="portfolio-btn">

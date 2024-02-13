@@ -6,12 +6,14 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer"
-
+import CarousalModal from "./components/CarousalModal";
+ 
 function App() {
   return (
     <div>
       <NavBar />
       <Home />
+      <CarousalModal />
       <About />
       <Portfolio />
       <Experience />
