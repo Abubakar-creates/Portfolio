@@ -54,33 +54,29 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white pt-[5%]"
     >
       <CarousalModal open={open} handleClose={toggleOpen} />
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             Portfolio
           </p>
-          <p className="py-6">Check out some of my work right here</p>
+          <p className="py-6 max-md:text-[.9rem]">Check out some of my work right here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, link, repo }) => (
-            <div  key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 cursor-pointer">
               <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-lg "
                 onClick={toggleOpen}
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={() => window.open(link, '_blank')}>
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={() => window.open(repo, '_blank')}>
-                  GitHub
-                </button>
+              <div className="p-6 text-[.9rem]">
+                <h1 className="font-[600] text-[1.2rem]">Jobs.com.au</h1>
+                <h1 className="mt-4">it is a web base software use to apply on various jobs through one click </h1>
               </div>
             </div>
           ))}
