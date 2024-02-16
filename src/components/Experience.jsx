@@ -12,6 +12,8 @@ import node from "../assets/node.png";
 import express from "../assets/express.png"
 import mongodb from "../assets/mongodb.png"
 import redux from "../assets/redux.png"
+import mui from "../assets/materialui.png"
+
 const Experience = () => {
   const techs = [
     {
@@ -40,10 +42,16 @@ const Experience = () => {
     },
     {
       id: 5,
-      src: node,
-      title: "NodeJs",
-      style: "shadow-green-400",
+      src: reactImage,
+      title: "React Native",
+      style: "shadow-green-600",
     },
+    // {
+    //   id: 5,
+    //   src: node,
+    //   title: "NodeJs",
+    //   style: "shadow-green-400",
+    // },
     {
       id: 6,
       src: nextjs,
@@ -52,9 +60,9 @@ const Experience = () => {
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: mui,
+      title: "Material UI",
+      style: "shadow-blue-900",
     },
     {
       id: 8,
@@ -68,22 +76,22 @@ const Experience = () => {
       title: "Tailwind",
       style: "shadow-sky-400",
     },
-    {
-      id: 10,
-      src: express,
-      title: "Express",
-      style: "shadow-white",
-    },
-    {
-      id: 11,
-      src: mongodb,
-      title: "MongoDB",
-      style: "shadow-green-500",
-    },
+    // {
+    //   id: 10,
+    //   src: express,
+    //   title: "Express",
+    //   style: "shadow-white",
+    // },
+    // {
+    //   id: 11,
+    //   src: mongodb,
+    //   title: "MongoDB",
+    //   style: "shadow-green-500",
+    // },
     {
       id: 12,
       src: redux,
-      title: "Redux",
+      title: "Redux Toolkit",
       style: "shadow-purple-500",
     },
   ];

@@ -1,85 +1,33 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import resume from "../assets/resume.pdf"
-const SocialLinks = () => {
-  const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/abubakar-abubakar-3806bb2a4/",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/Develaper-Abubakar",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          Email <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:abubakar.4983763@gmail.com",
-      
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: resume,
-      download: true,
-      style: "rounded-br-md",
-    },
-    // {
-    //   id: 5,
-    //   child: (
-    //     <>
-    //       Twitter <FaTwitter size={30} />
-    //     </>
-    //   ),
-    //   href: "https://twitter.com/rahulkarda2002",
-    //   style: "rounded-br-md",
-    // },
-  ];
+import resume from "../assets/resume4.pdf";
 
+const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
-          <li
-            key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" +
-              " " +
-              style
-            }
-          >
-            <a
-              href={href}
-              className="flex justify-between items-center w-full text-white"
-              download={download}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {child}
-            </a>
-          </li>
-        ))}
+        <li className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 rounded-tr-md">
+          <a href="https://www.linkedin.com/in/abubakar-abubakar-3806bb2a4/" className="flex justify-between items-center w-full text-white" target="_blank" rel="noreferrer">
+            LinkedIn <FaLinkedin size={30} />
+          </a>
+        </li>
+        <li className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300">
+          <a href="https://github.com/Develaper-Abubakar" className="flex justify-between items-center w-full text-white" target="_blank" rel="noreferrer">
+            GitHub <FaGithub size={30} />
+          </a>
+        </li>
+        <li className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300">
+          <a href="mailto:abubakar.4983763@gmail.com" className="flex justify-between items-center w-full text-white" target="_blank" rel="noreferrer">
+            Email <HiOutlineMail size={30} />
+          </a>
+        </li>
+        <li className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 rounded-br-md">
+          <a href={resume} className="flex justify-between items-center w-full text-white"  rel="noreferrer" download ='resume downloaded'>
+            Resume <BsFillPersonLinesFill size={30} />
+          </a>
+        </li>
       </ul>
     </div>
   );
