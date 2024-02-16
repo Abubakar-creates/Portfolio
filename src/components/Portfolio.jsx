@@ -11,7 +11,9 @@ const Portfolio = () => {
 
   const data = [
     { id: 1, name: 'C.R.M Audit Times', description: 'this is a crm description', thumbnail: api, project: 'crm' },
-    { id: 1, name: 'Jobs', description: 'this is a crm description', thumbnail: api, project: 'jobs' },
+    { id: 2, name: 'Jobs', description: 'this is a crm description', thumbnail: api, project: 'jobs' },
+    { id: 3, name: 'Books', description: 'this is a crm description', thumbnail: api, project: 'books' },
+    { id: 3, name: 'Books Admin', description: 'this is a crm description', thumbnail: api, project: 'booksadmin' },
   ]
 
   const [open, setOpen] = useState(false);
