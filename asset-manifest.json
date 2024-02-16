@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b84983f1.css",
-    "main.js": "/Portfolio/static/js/main.2d606383.js",
+    "main.css": "/Portfolio/static/css/main.dc1e14a1.css",
+    "main.js": "/Portfolio/static/js/main.19949f65.js",
     "static/js/592.6647c214.chunk.js": "/Portfolio/static/js/592.6647c214.chunk.js",
     "static/media/apod.jpg": "/Portfolio/static/media/apod.5837a97979bfd98485a6.jpg",
     "static/media/iptracker.jpg": "/Portfolio/static/media/iptracker.6ab6589069ce320ad5eb.jpg",
     "static/media/nftportal.jpg": "/Portfolio/static/media/nftportal.85c74c9d58db965c3c2e.jpg",
     "static/media/graphql.png": "/Portfolio/static/media/graphql.fc6b9451733c620ceb86.png",
     "static/media/waveportal.jpg": "/Portfolio/static/media/waveportal.665fff08903b077c1e50.jpg",
+    "static/media/resume4.pdf": "/Portfolio/static/media/resume4.20fbc05901e91ba0b2fc.pdf",
     "static/media/api.jpg": "/Portfolio/static/media/api.c1dd98a7d4ec1d150dae.jpg",
     "static/media/webpostman.jpg": "/Portfolio/static/media/webpostman.4689118f2fcc4d7a6fc5.jpg",
-    "static/media/resume.pdf": "/Portfolio/static/media/resume.6360c970ea270ecd8619.pdf",
     "static/media/heroImage.png": "/Portfolio/static/media/heroImage.dbba8da7d495b95fa046.png",
     "static/media/react.png": "/Portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/Portfolio/static/media/node.952a9ea986dcfa5229ad.png",
@@ -22,12 +22,12 @@
     "static/media/express.png": "/Portfolio/static/media/express.1182731d0fa4994589eb.png",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/Portfolio/index.html",
-    "main.b84983f1.css.map": "/Portfolio/static/css/main.b84983f1.css.map",
-    "main.2d606383.js.map": "/Portfolio/static/js/main.2d606383.js.map",
+    "main.dc1e14a1.css.map": "/Portfolio/static/css/main.dc1e14a1.css.map",
+    "main.19949f65.js.map": "/Portfolio/static/js/main.19949f65.js.map",
     "592.6647c214.chunk.js.map": "/Portfolio/static/js/592.6647c214.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b84983f1.css",
-    "static/js/main.2d606383.js"
+    "static/css/main.dc1e14a1.css",
+    "static/js/main.19949f65.js"
   ]
 }
