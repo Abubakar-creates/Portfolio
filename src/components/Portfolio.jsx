@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-import api from "../assets/portfolio/api.jpg";
-import apod from "../assets/portfolio/apod.jpg";
-import iptracker from "../assets/portfolio/iptracker.jpg";
-import nftportal from "../assets/portfolio/nftportal.jpg";
-import webpostman from "../assets/portfolio/webpostman.jpg";
-import waveportal from "../assets/portfolio/waveportal.jpg";
 import CarousalModal from "./CarousalModal";
+import jobsadmin from "../assets/Projects/Jobs/adminthumbnail.jpeg";
+import jobwebthumbnail from "../assets/Projects/Jobs/jobswebthumbnail.jpg";
+import crmthumb from "../assets/Projects/CRM_Audit_Times/crmthumb.jpg";
+import booksthumb from "../assets/Projects/Books/booksthumb.jpg";
+import adminthumb from "../assets/Projects/Books/adminthumb.jpg";
+
 
 const Portfolio = () => {
 
   const data = [
-    { id: 1, name: 'C.R.M Audit Times', description: 'this is a crm description', thumbnail: api, project: 'crm' },
-    { id: 2, name: 'Jobs', description: 'this is a crm description', thumbnail: api, project: 'jobs' },
-    { id: 3, name: 'Books', description: 'this is a crm description', thumbnail: api, project: 'books' },
-    { id: 3, name: 'Books Admin', description: 'this is a crm description', thumbnail: api, project: 'booksadmin' },
+    { id: 1, name: 'C.R.M Audit Times', description: 'this is a crm description', thumbnail: crmthumb, project: 'crm' },
+    { id: 2, name: 'Jobs', description: 'this is a crm description', thumbnail: jobwebthumbnail, project: 'jobs' },
+    { id: 2, name: 'Jobs admin', description: 'this is a crm description', thumbnail: jobsadmin, project: 'jobsadmin' },
+    { id: 3, name: 'Books', description: 'this is a crm description', thumbnail: booksthumb, project: 'books' },
+    { id: 3, name: 'Books Admin', description: 'this is a crm description', thumbnail: adminthumb, project: 'booksadmin' },
   ]
 
   const [open, setOpen] = useState(false);
@@ -35,7 +36,7 @@ const Portfolio = () => {
     >
       <CarousalModal open={open} handleClose={toggleOpen} project={id} />
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 text-center" >
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             Portfolio
           </p>

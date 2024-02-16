@@ -10,7 +10,7 @@ import booksabout from '../assets/Projects/Books/about.png'
 import bookscart from '../assets/Projects/Books/cart.png'
 import bookscontact from '../assets/Projects/Books/contact.png'
 import booksdetail from '../assets/Projects/Books/detail.png'
- 
+
 // books admin ========
 
 import booksdashboard from '../assets/Projects/Books/dashboard.png'
@@ -19,7 +19,31 @@ import booksorders from '../assets/Projects/Books/orders.png'
 import booksgrades from '../assets/Projects/Books/grades.png'
 import bookslogin from '../assets/Projects/Books/login.png'
 import booksform from '../assets/Projects/Books/form.png'
- 
+
+// crm ==============
+
+import crmhome from '../assets/Projects/CRM_Audit_Times/home.png'
+import crmabout from '../assets/Projects/CRM_Audit_Times/about.png'
+import crmcontact from '../assets/Projects/CRM_Audit_Times/contact.png'
+import crmpricing from '../assets/Projects/CRM_Audit_Times/pricing.png'
+
+// jobs web =============
+
+import jobshome from '../assets/Projects/Jobs/webhome.png'
+import alljobs from '../assets/Projects/Jobs/jobs.png'
+import resume from '../assets/Projects/Jobs/resume.png'
+import resumeform from '../assets/Projects/Jobs/resumeform.png'
+import profile from '../assets/Projects/Jobs/profile.png'
+
+
+// jobs admin =============
+
+import jobsplans from '../assets/Projects/Jobs/plans.png'
+import jobsdashboard from '../assets/Projects/Jobs/dashboard.png'
+import jobsform from '../assets/Projects/Jobs/jobsform.png'
+import dashjobs from '../assets/Projects/Jobs/dashjobs.png'
+import dashcategory from '../assets/Projects/Jobs/dashcategory.png'
+
 
 
 
@@ -32,12 +56,23 @@ const CarousalModal = ({ open, handleClose, project }) => {
 
     const booksadmin = [{ src: booksdashboard }, { src: booksschool }, { src: booksorders }, { src: booksgrades }, { src: booksform }, { src: bookslogin }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
 
+    const crm = [{ src: crmhome }, { src: crmabout }, { src: crmcontact }, { src: crmpricing }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+
+    const jobs = [{ src: jobshome }, { src: alljobs }, { src: resume }, { src: profile }, { src: resumeform }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+
+    const jobsadmmin = [{ src: jobsdashboard }, { src: jobsform }, { src: dashjobs }, { src: jobsplans }, { src: dashcategory }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
 
     useEffect(() => {
         if (project === 'books') {
             setData(books)
         } else if (project === 'booksadmin') {
             setData(booksadmin)
+        } else if (project === 'crm') {
+            setData(crm)
+        } else if (project === 'jobs') {
+            setData(jobs)
+        } else if (project === 'jobsadmin') {
+            setData(jobsadmmin)
         }
     }, [project])
 
@@ -71,7 +106,7 @@ const CarousalModal = ({ open, handleClose, project }) => {
                                         {value.video ?
                                             ('')
                                             :
-                                            (<img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto mt-10' />)
+                                            (<img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto mt-10 shadow-xl' />)
                                         }
                                     </div>
 
