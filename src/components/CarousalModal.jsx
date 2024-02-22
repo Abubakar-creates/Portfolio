@@ -48,19 +48,19 @@ import dashcategory from '../assets/Projects/Jobs/dashcategory.png'
 
 
 
-const CarousalModal = ({ open, handleClose, project }) => {
+const CarousalModal = ({ open, handleClose, project ,projectDescription , projectName}) => {
 
     const [data, setData] = useState()
 
-    const books = [{ src: bookshome }, { src: booksabout }, { src: bookscart }, { src: bookscontact }, { src: booksdetail }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+    const books = [{ src: bookshome }, { src: booksabout }, { src: bookscart }, { src: bookscontact }, { src: booksdetail }]
 
-    const booksadmin = [{ src: booksdashboard }, { src: booksschool }, { src: booksorders }, { src: booksgrades }, { src: booksform }, { src: bookslogin }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+    const booksadmin = [{ src: booksdashboard }, { src: booksschool }, { src: booksorders }, { src: booksgrades }, { src: booksform }, { src: bookslogin }]
 
-    const crm = [{ src: crmhome }, { src: crmabout }, { src: crmcontact }, { src: crmpricing }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+    const crm = [{ src: crmhome }, { src: crmabout }, { src: crmcontact }, { src: crmpricing }]
 
-    const jobs = [{ src: jobshome }, { src: alljobs }, { src: resume }, { src: profile }, { src: resumeform }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+    const jobs = [{ src: jobshome }, { src: alljobs }, { src: resume }, { src: profile }, { src: resumeform }]
 
-    const jobsadmmin = [{ src: jobsdashboard }, { src: jobsform }, { src: dashjobs }, { src: jobsplans }, { src: dashcategory }, { video: 'https://www.youtube.com/watch?v=pFDJEKFy8jA' }]
+    const jobsadmmin = [{ src: jobsdashboard }, { src: jobsform }, { src: dashjobs }, { src: jobsplans }, { src: dashcategory }]
 
     useEffect(() => {
         if (project === 'books') {
@@ -90,29 +90,24 @@ const CarousalModal = ({ open, handleClose, project }) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', bgcolor: 'background.paper', boxShadow: 24, p: 4, width: '80vw', maxWidth: 900 }} >
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', bgcolor: 'background.paper', boxShadow: 24, p: 4, width: '80vw', maxWidth: 900 }}  >
 
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        <Carousel stopAutoPlayOnHover={true} navButtonsAlwaysVisible autoPlay={false}>
+                        {/* <Carousel stopAutoPlayOnHover={true} navButtonsAlwaysVisible autoPlay={false}> */}
 
-                            <div className='overflow-y-auto h-[50rem] no-scrollbar bg-white'>
-                                <h1 className='pl-6 pt-4 text-3xl '>Online Books store </h1>
-                                <h1 className='text-[1.2rem] p-6'>Welcome to our online book store, your one-stop destination for all your reading needs! Dive into a world of literary treasures from the comfort of your home with our extensive collection of books spanning various genres, from gripping thrillers to heartwarming romance, thought-provoking non-fiction to enchanting fantasy.
-                                    Browse through our user-friendly website and discover bestsellers, classics, and hidden gems alike. With our intuitive search and filter options, finding your next captivating read is a breeze. Once you've found the perfect book, simply add it to your cart and proceed to our secure checkout.
-                                    Our streamlined checkout process ensures a hassle-free shopping experience, allowing you to complete your purchase with confidence and ease. Select your preferred payment method and shipping option, and before you know it, your new book will be on its way to your doorstep.
-                                    Experience the convenience of online shopping with our trusted online book store. Whether you're a passionate bibliophile or just looking for your next great read, we're here to help you embark on your literary journey. Happy reading!</h1>
+                            <div className='overflow-y-auto h-screen  bg-white'>
+                                <h1 className='pl-6 pt-4 text-3xl max-md:text-sm'>{projectName}</h1>
+                                <h1 className='text-[1.2rem] p-6 max-md:text-sm'>{projectDescription}</h1>
                                 {data?.map((value) => (
                                     <div>
-                                        {value.video ?
-                                            ('')
-                                            :
-                                            (<img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto mt-10 shadow-xl' />)
-                                        }
+                                       
+                                            <img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto mt-10 shadow-xl' />
+                                        
                                     </div>
 
                                 ))}
                             </div>
-                            {data?.map((value) => {
+                            {/* {data?.map((value) => {
                                 return (
                                     <div>
                                         {value.video ?
@@ -125,9 +120,9 @@ const CarousalModal = ({ open, handleClose, project }) => {
                                     </div>
 
                                 )
-                            })}
+                            })} */}
 
-                        </Carousel>
+                        {/* </Carousel> */}
 
                     </Typography>
                     {/* <Button onClick={handleClose}>Close Modal</Button> */}

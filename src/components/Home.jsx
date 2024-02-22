@@ -3,7 +3,7 @@ import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
-import resume from '../assets/resume4.pdf'
+import resume from '../assets/resume.pdf'
 
 const Home = () => {
   return (
@@ -26,10 +26,10 @@ const Home = () => {
           <p className="text-gray-500 py-4 max-w-md">
             I have 1.5 years of experience building websites and desgining software.
             I love to work on web application using technologies like
-            React, React Native, Tailwind and Next JS.
+            React, React Native and Next JS.
           </p>
 
-          <div className="portfolio-btn flex gap-8">
+          <div className="portfolio-btn flex gap-8 max-md:gap-2">
             <Link
               to="portfolio"
               smooth
