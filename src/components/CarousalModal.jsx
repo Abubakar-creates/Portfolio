@@ -95,13 +95,12 @@ const CarousalModal = ({ open, handleClose, project ,projectDescription , projec
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {/* <Carousel stopAutoPlayOnHover={true} navButtonsAlwaysVisible autoPlay={false}> */}
 
-                            <div className='overflow-y-auto h-screen  bg-white'>
-                                <h1 className='pl-6 pt-4 text-3xl max-md:text-sm'>{projectName}</h1>
+                            <div className='overflow-y-auto h-[90vh] bg-white'>
+                                <h1 className='pl-6 pt-4 text-3xl max-md:text-[1.2rem]'>{projectName}</h1>
                                 <h1 className='text-[1.2rem] p-6 max-md:text-sm'>{projectDescription}</h1>
                                 {data?.map((value) => (
-                                    <div>
-                                       
-                                            <img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto mt-10 shadow-xl' />
+                                    <div className='mt-6'>
+                                            <img src={value?.src} alt="image3" className='w-[100%] ml-auto mr-auto shadow-xl' />
                                         
                                     </div>
 
