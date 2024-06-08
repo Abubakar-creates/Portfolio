@@ -76,17 +76,19 @@ const CarousalModal = ({ open, handleClose, project ,projectDescription , projec
         }
     }, [project])
 
-    // console.log('data', data);
 
-    // console.log('project', project);
+const closeModal = () => {
+    setData([])
+    handleClose()
+
+}
 
 
     return (
         <div>
-            {/* <Button variant="contained" onClick={handleOpen}>Open Modal</Button> */}
             <Modal
                 open={open}
-                onClose={handleClose}
+                onClose={closeModal}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
